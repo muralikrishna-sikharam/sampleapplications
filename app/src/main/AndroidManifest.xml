@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" /> <!-- Needed only if your app looks for Bluetooth devices. -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_PRIVILEGED"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".MainLoginFingerPrint"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SwiperActivity"
+            android:exported="true" />
+
+        <service android:name=".ToastService" />
+
+        <activity
+            android:name=".TorchLightActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RealmCrudActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ToDoListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RealmTutorial"
+            android:exported="true" />
+        <activity
+            android:name=".OneDriveSort"
+            android:exported="true" />
+        <activity
+            android:name=".Sparkles"
+            android:exported="true" />
+        <activity
+            android:name=".ImageViewKotlin"
+            android:exported="true" />
+        <activity
+            android:name=".VideoViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CallNumber"
+            android:exported="true" />
+
+        <service android:name=".MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".NotificationExample"
+            android:exported="true" />
+        <activity
+            android:name=".NotificationExample2"
+            android:exported="true" />
+        <activity
+            android:name=".SplitifyHistoryPage"
+            android:exported="true" />
+        <activity
+            android:name=".GSON_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".JSON_Parsing"
+            android:exported="true" />
+        <activity
+            android:name=".Crud_Operations"
+            android:exported="true" />
+        <activity
+            android:name=".RetrofitExample"
+            android:exported="true" />
+        <activity
+            android:name=".Basic_Maths_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".SplitifyLogin"
+            android:exported="true" />
+        <activity
+            android:name=".Margh_Profile"
+            android:exported="true" />
+        <activity
+            android:name=".ImageScroll"
+            android:exported="true" />
+        <activity
+            android:name=".Margh_Home"
+            android:exported="true" />
+        <activity
+            android:name=".Margh_Login"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+        </activity>
+    </application>
+
+</manifest>

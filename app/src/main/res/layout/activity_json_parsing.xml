@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".JSON_Parsing">
+
+    <TextView
+        android:id="@+id/textViewHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Heading"
+        android:textSize="20dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_weight="0.5"
+                android:gravity="center|right"
+                android:text="Enter Number : " />
+
+            <EditText
+                android:id="@+id/editTextInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="0.5"
+                android:digits="0123456789"
+                android:hint="Please enter any number"
+                android:maxLength="10" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/buttonResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reverse Above Number" />
+
+        <TextView
+            android:id="@+id/textViewResult1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="out put field" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewJSON"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="json_Result" />
+
+        <Button
+            android:id="@+id/buttonParseJSON"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button Parse JSON" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="json_Result" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/taskNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Name"
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:id="@+id/taskDescriptionInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Task Description"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/taskDueDateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Due Date (YYYY-MM-DD HH:MM)"
+        android:inputType="datetime" />
+
+    <CheckBox
+        android:id="@+id/taskCompletedInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Completed" />
+
+    <Button
+        android:id="@+id/updateTaskButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Update Task" />
+</LinearLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/but_MarghLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_button_orange"
+            android:text="MarghLogin"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/but_SplitifyLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_button_orange"
+            android:text="SplitifyLogin"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/but_GSON"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_button_orange"
+            android:text="GSON"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/but_JSON_Parsing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_button_orange"
+            android:text="JSON_Parsing"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/but_NotificationExample"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_button_orange"
+            android:text="Notification Example"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/but_Retrofit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_button_orange"
+            android:text="Retrofit"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/but_CrudOperations"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_button_orange"
+            android:text="CrudOperations"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/but_Basic_Maths_Activity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_button_orange"
+            android:text="Maths_RecyclerView"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/but_WhatsApp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_button_orange"
+            android:text="WhatsApp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/but_Calculations"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_button_orange"
+            android:text="Test Tables till 20"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_Video_View_Activity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_button_orange"
+            android:text="VideoView_MediaPlayer"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button_image_View_Activity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_button_orange"
+            android:text="imageView from web"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_Sprakles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_button_orange"
+            android:text="Sparkles_Activity"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button_OneDrive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_button_orange"
+            android:text="Swiper_Activity"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/but_TorchLight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_button_orange"
+            android:text="TorchLight"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/but_FingerPrint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_button_orange"
+            android:text="FingerPrint"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CallNumber">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_Number1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:maxLength="10"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:maxLength="10"
+            android:text=" X ">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_Number2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:maxLength="10">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:maxLength="10"
+            android:text=" = ">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_ResultNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:inputType="number|phone"
+            android:maxLength="10">
+
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/but_Result_Plus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Answer"></Button>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="Correct Answered Q's:"
+            android:textSize="10dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_Result_CorrectAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:maxLength="10">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="Wrong Answered Q's:"
+            android:textSize="10dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_Result_WrongAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:maxLength="10">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="Total Answered Q's:"
+            android:textSize="10dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_Total_AnsweredQuestions"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:maxLength="10">
+
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/but_Reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"></Button>
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Margh_Profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_Profile"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="Profile"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/iv_Profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:background="@drawable/margh_logo"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="Profile"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold">
+
+            </ImageView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_LoginUserName"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="userName"
+                android:textSize="25dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/but_Share"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                android:onClick="onClick"
+                android:text="Share"
+                android:textAllCaps="false">
+
+            </Button>
+
+            <Button
+                android:id="@+id/but_ContactUs"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                android:onClick="onClick"
+                android:text="Contact Us"
+                android:textAllCaps="false">
+
+            </Button>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/but_AboutUs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@color/teal_200"
+                android:onClick="onClick"
+                android:text="About Us"
+                android:textAllCaps="false">
+
+            </Button>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/but_LogOut"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick"
+            android:text="Log Out"
+            android:textAllCaps="false">
+
+        </Button>
+    </LinearLayout>
+</LinearLayout>

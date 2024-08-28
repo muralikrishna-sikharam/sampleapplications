@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_Home"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_Home"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@drawable/home_logo" />
+
+        <TextView
+            android:id="@+id/tv_HomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Home"
+            android:textAlignment="center"
+            android:textColor="@color/navyBlue"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_Schedule_PickUp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_SchedulePickUp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@drawable/schedule_pickup" />
+
+        <TextView
+            android:id="@+id/tv_SchedulePickUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Schedule Pickup"
+            android:textAlignment="center"
+            android:textColor="@color/navyBlue"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_RateList"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_RateList"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@drawable/rate_list" />
+
+        <TextView
+            android:id="@+id/tv_RateList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Rate List"
+            android:textAlignment="center"
+            android:textColor="@color/navyBlue"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_MyAccount"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_MyAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@drawable/rate_list" />
+
+        <TextView
+            android:id="@+id/tv_MyAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="MyAccount"
+            android:textAlignment="center"
+            android:textColor="@color/navyBlue"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

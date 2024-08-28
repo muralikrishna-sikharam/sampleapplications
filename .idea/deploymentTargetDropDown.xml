@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="MainLoginFingerPrint">
+        <State />
+      </entry>
+      <entry key="RealmCrudActivity">
+        <State />
+      </entry>
+      <entry key="SwipeActivity">
+        <State />
+      </entry>
+      <entry key="SwiperActivity">
+        <State />
+      </entry>
+      <entry key="TorchLightActivity">
+        <State />
+      </entry>
+      <entry key="app">
+        <State />
+      </entry>
+    </value>
+  </component>
+</project>

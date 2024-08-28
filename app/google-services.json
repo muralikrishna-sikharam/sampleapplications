@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "925096083880",
+    "project_id": "muralikrishnasikharam",
+    "storage_bucket": "muralikrishnasikharam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925096083880:android:9922ea29ec5f19eaba1d9d",
+        "android_client_info": {
+          "package_name": "com.example.sampleapplications"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-uo7UZpinFrEztTZVbne24CZCJp94iV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
