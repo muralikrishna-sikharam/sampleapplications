@@ -1,6 +1,7 @@
 package com.example.sampleapplications
 
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
@@ -20,19 +21,23 @@ import androidx.core.content.ContextCompat
 
 class MainLoginFingerPrint : AppCompatActivity() {
     lateinit var swipeButton1: ImageView
+    lateinit var loginbutton: Button
+    lateinit var msgtex: TextView
     lateinit var swipeText1: TextView
-    var initialX = 0f
-    var dX = 0f
-    var isSwiped = false
+    private var initialX = 0f
+    private var dX = 0f
+    private var isSwiped = false
+
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_login_finger_print)
 
         // Initialising msgtext and loginbutton
-        val msgtex = findViewById<TextView>(R.id.msgtext)
-        val loginbutton = findViewById<Button>(R.id.login)
-        swipeButton1 = findViewById<ImageView>(R.id.swipeButton1)
-        swipeText1 = findViewById<TextView>(R.id.swipeText1)
+        msgtex = findViewById(R.id.msgtext)
+        loginbutton = findViewById(R.id.login)
+        swipeButton1 = findViewById(R.id.swipeButton1)
+        swipeText1 = findViewById(R.id.swipeText1)
         val swipeButtonBackground = findViewById<View>(R.id.swipeButtonBackground1)
         swipeButton1.setOnTouchListener(OnTouchListener { v, event ->
             when (event.action) {
@@ -58,17 +63,17 @@ class MainLoginFingerPrint : AppCompatActivity() {
                         // Do something on successful swipe
                         swipeText1.text = "Login Confirmed"
                         isSwiped = true
-                        if (isSwiped) {
+
                             val intent1 =
                                 Intent(this@MainLoginFingerPrint, MainActivity::class.java)
                             startActivity(intent1)
-                        } else {
-                            Toast.makeText(
-                                this@MainLoginFingerPrint,
-                                "Swipe till End to get Main Activity.",
-                                Toast.LENGTH_SHORT
-                            ).show()
-                        }
+                        /* } else {
+                             Toast.makeText(
+                                 this@MainLoginFingerPrint,
+                                 "Swipe till End to get Main Activity.",
+                                 Toast.LENGTH_SHORT
+                             ).show()
+                         }*/
                     } else {
                         Toast.makeText(
                             this@MainLoginFingerPrint,
@@ -136,11 +141,12 @@ class MainLoginFingerPrint : AppCompatActivity() {
         loginbutton.setOnClickListener { biometricPrompt.authenticate(promptInfo) }
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onResume() {
         super.onResume()
         // Reset swipe button position and text when the activity resumes
-        swipeButton1?.x = initialX
-        swipeText1?.text = "Swipe to Login"
+        swipeButton1.x = initialX
+        swipeText1.text = "Swipe to Login"
     }
 }
 
