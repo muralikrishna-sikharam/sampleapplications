@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Crud_Operations extends AppCompatActivity {
 
-    EditText Name, Pass, updateold, updatenew, delete;
+    EditText Name, Pass, update_old, update_new, delete;
     DBHelper helper;
 
     @Override
@@ -17,8 +17,8 @@ public class Crud_Operations extends AppCompatActivity {
         setContentView(R.layout.activity_main4);
         Name = (EditText) findViewById(R.id.editName);
         Pass = (EditText) findViewById(R.id.editPass);
-        updateold = (EditText) findViewById(R.id.editText3);
-        updatenew = (EditText) findViewById(R.id.editText5);
+        update_old = (EditText) findViewById(R.id.editText3);
+        update_new = (EditText) findViewById(R.id.editText5);
         delete = (EditText) findViewById(R.id.editText6);
 
         helper = new DBHelper(this);
@@ -33,13 +33,11 @@ public class Crud_Operations extends AppCompatActivity {
             long id = helper.insertData(t1, t2);
             if (id <= 0) {
                 Message.message(getApplicationContext(), "Insertion Unsuccessful");
-                Name.setText("");
-                Pass.setText("");
             } else {
                 Message.message(getApplicationContext(), "Insertion Successful");
-                Name.setText("");
-                Pass.setText("");
             }
+            Name.setText("");
+            Pass.setText("");
         }
     }
 
@@ -49,21 +47,19 @@ public class Crud_Operations extends AppCompatActivity {
     }
 
     public void update(View view) {
-        String u1 = updateold.getText().toString();
-        String u2 = updatenew.getText().toString();
+        String u1 = update_old.getText().toString();
+        String u2 = update_new.getText().toString();
         if (u1.isEmpty() || u2.isEmpty()) {
             Message.message(getApplicationContext(), "Enter Data");
         } else {
             int a = helper.updateName(u1, u2);
             if (a <= 0) {
                 Message.message(getApplicationContext(), "Unsuccessful");
-                updateold.setText("");
-                updatenew.setText("");
             } else {
                 Message.message(getApplicationContext(), "Updated");
-                updateold.setText("");
-                updatenew.setText("");
             }
+            update_old.setText("");
+            update_new.setText("");
         }
 
     }

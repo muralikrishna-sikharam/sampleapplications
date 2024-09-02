@@ -225,13 +225,13 @@
             android:textColor="@color/black" />
 
         <Button
-            android:id="@+id/but_FingerPrint"
+            android:id="@+id/but_BatteryPercentage"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="0.5"
             android:background="@drawable/custom_button_orange"
-            android:text="FingerPrint"
+            android:text="BatteryPercentage"
             android:textColor="@color/black" />
 
 

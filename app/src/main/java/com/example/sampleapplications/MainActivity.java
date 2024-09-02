@@ -1,6 +1,7 @@
 package com.example.sampleapplications;
 
 import android.content.Intent;
+import android.os.BatteryManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     Button but_SplitifyLogin, but_MarghLogin, but_JSON_Parsing, but_GSON, but_NotificationExample, button_Sprakles,
-            but_FingerPrint, but_TorchLight, button_OneDrive, but_Retrofit, but_CrudOperations, but_Basic_Maths_Activity, but_WhatsApp, but_Call, button_Video_View_Activity, button_image_View_Activity;
+            but_BatteryPercentage, but_TorchLight, button_OneDrive, but_Retrofit, but_CrudOperations, but_Basic_Maths_Activity, but_WhatsApp, but_Call, button_Video_View_Activity, button_image_View_Activity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +32,20 @@ public class MainActivity extends AppCompatActivity {
         button_Sprakles = findViewById(R.id.button_Sprakles);
         button_OneDrive = findViewById(R.id.button_OneDrive);
         but_TorchLight = findViewById(R.id.but_TorchLight);
-        but_FingerPrint = findViewById(R.id.but_FingerPrint);
-        but_FingerPrint.setOnClickListener(new View.OnClickListener() {
+        but_BatteryPercentage = findViewById(R.id.but_BatteryPercentage);
+        but_BatteryPercentage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(MainActivity.this, MainLoginFingerPrint.class);
-                startActivity(intent1);
+                BatteryManager bm = (BatteryManager) getSystemService(BATTERY_SERVICE);
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+                    int percentage = bm.getIntProperty(BatteryManager.BATTERY_PROPERTY_CAPACITY);
+                    Toast.makeText(MainActivity.this, "Battery Percentage is " + percentage + " %", Toast.LENGTH_SHORT).show();
+                    //  text.setText("Battery Percentage is "+percentage+" %");
+                } else {
+                    Toast.makeText(MainActivity.this, "Need Android 5+ version to show battery percentage", Toast.LENGTH_SHORT).show();
+                }
+               /* Intent intent1 = new Intent(MainActivity.this, MainLoginFingerPrint.class);
+                startActivity(intent1);*/
             }
         });
         but_TorchLight.setOnClickListener(new View.OnClickListener() {
