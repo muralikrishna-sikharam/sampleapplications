@@ -237,5 +237,33 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/but_PhonePayScanner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_button_orange"
+            android:text="PhonePe Scanner Activity"
+            android:textColor="@color/black" />
+
+        <!-- <Button
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_margin="5dp"
+             android:layout_weight="0.5"
+             android:background="@drawable/custom_button_orange"
+             android:text="BatteryPercentage"
+             android:textColor="@color/black" />-->
+
+
+    </LinearLayout>
+
 
 </LinearLayout>

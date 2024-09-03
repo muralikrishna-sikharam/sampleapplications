@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     Button but_SplitifyLogin, but_MarghLogin, but_JSON_Parsing, but_GSON, but_NotificationExample, button_Sprakles,
-            but_BatteryPercentage, but_TorchLight, button_OneDrive, but_Retrofit, but_CrudOperations, but_Basic_Maths_Activity, but_WhatsApp, but_Call, button_Video_View_Activity, button_image_View_Activity;
+            but_PhonePayScanner, but_BatteryPercentage, but_TorchLight, button_OneDrive, but_Retrofit, but_CrudOperations, but_Basic_Maths_Activity, but_WhatsApp, but_Call, button_Video_View_Activity, button_image_View_Activity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,14 @@ public class MainActivity extends AppCompatActivity {
         button_OneDrive = findViewById(R.id.button_OneDrive);
         but_TorchLight = findViewById(R.id.but_TorchLight);
         but_BatteryPercentage = findViewById(R.id.but_BatteryPercentage);
+        but_PhonePayScanner = findViewById(R.id.but_PhonePayScanner);
+        but_PhonePayScanner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(MainActivity.this, PhonePeScanner.class);
+                startActivity(intent1);
+            }
+        });
         but_BatteryPercentage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -94,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         but_Call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(MainActivity.this, CallNumber.class);
+                Intent intent1 = new Intent(MainActivity.this, Basic_Calculations.class);
                 startActivity(intent1);
             }
         });

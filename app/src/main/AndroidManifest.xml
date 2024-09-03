@@ -45,10 +45,14 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".PhonePeScanner"
+            android:exported="true" />
+        <activity
             android:name=".MainLoginFingerPrint"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -83,7 +87,7 @@
             android:name=".VideoViewActivity"
             android:exported="true" />
         <activity
-            android:name=".CallNumber"
+            android:name=".Basic_Calculations"
             android:exported="true" />
 
         <service android:name=".MessagingService">
@@ -133,9 +137,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

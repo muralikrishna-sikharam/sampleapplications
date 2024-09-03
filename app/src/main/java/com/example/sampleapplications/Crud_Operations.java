@@ -14,12 +14,12 @@ public class Crud_Operations extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main4);
-        Name = (EditText) findViewById(R.id.editName);
-        Pass = (EditText) findViewById(R.id.editPass);
-        update_old = (EditText) findViewById(R.id.editText3);
-        update_new = (EditText) findViewById(R.id.editText5);
-        delete = (EditText) findViewById(R.id.editText6);
+        setContentView(R.layout.activity_crud_operations);
+        Name = findViewById(R.id.editName);
+        Pass = findViewById(R.id.editPass);
+        update_old = findViewById(R.id.editText3);
+        update_new = findViewById(R.id.editText5);
+        delete = findViewById(R.id.editText6);
 
         helper = new DBHelper(this);
     }

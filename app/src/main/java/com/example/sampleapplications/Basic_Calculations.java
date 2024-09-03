@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 
-public class CallNumber extends AppCompatActivity implements View.OnClickListener {
+public class Basic_Calculations extends AppCompatActivity implements View.OnClickListener {
     EditText et_ResultNumber;
     Button but_Result_Plus, but_Reset;
     TextView tv_No1, tv_No2, tv_Result_WrongAnswer, tv_Result_CorrectAnswer, tv_Total_AnsweredQuestions;
@@ -19,16 +19,16 @@ public class CallNumber extends AppCompatActivity implements View.OnClickListene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_call_number);
+        setContentView(R.layout.activity_basic_calculations);
         //Getting the edittext and button instance
-        et_ResultNumber = (EditText) findViewById(R.id.et_ResultNumber);
-        tv_No1 = (TextView) findViewById(R.id.tv_Number1);
-        tv_No2 = (TextView) findViewById(R.id.tv_Number2);
-        tv_Result_CorrectAnswer = (TextView) findViewById(R.id.tv_Result_CorrectAnswer);
-        tv_Result_WrongAnswer = (TextView) findViewById(R.id.tv_Result_WrongAnswer);
-        tv_Total_AnsweredQuestions = (TextView) findViewById(R.id.tv_Total_AnsweredQuestions);
-        but_Result_Plus = (Button) findViewById(R.id.but_Result_Plus);
-        but_Reset = (Button) findViewById(R.id.but_Reset);
+        et_ResultNumber = findViewById(R.id.et_ResultNumber);
+        tv_No1 = findViewById(R.id.tv_Number1);
+        tv_No2 = findViewById(R.id.tv_Number2);
+        tv_Result_CorrectAnswer = findViewById(R.id.tv_Result_CorrectAnswer);
+        tv_Result_WrongAnswer = findViewById(R.id.tv_Result_WrongAnswer);
+        tv_Total_AnsweredQuestions = findViewById(R.id.tv_Total_AnsweredQuestions);
+        but_Result_Plus = findViewById(R.id.but_Result_Plus);
+        but_Reset = findViewById(R.id.but_Reset);
         fun_SetRandomNumbers();
         but_Reset.setOnClickListener(this);
         but_Result_Plus.setOnClickListener(this);

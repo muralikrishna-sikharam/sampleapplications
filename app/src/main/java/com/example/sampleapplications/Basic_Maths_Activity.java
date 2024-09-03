@@ -23,7 +23,7 @@ public class Basic_Maths_Activity extends AppCompatActivity implements View.OnCl
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_basic_maths);
         updateXML();
     }
 
@@ -34,11 +34,11 @@ public class Basic_Maths_Activity extends AppCompatActivity implements View.OnCl
         tv_TotalResult_Positive = findViewById(R.id.tv_TotalResult_Positive);
         tv_TotalResult_Negative = findViewById(R.id.tv_TotalResult_Negative);
         tv_Result = findViewById(R.id.tv_Result);
-        but_Negative = (Button) findViewById(R.id.but_result_negative);
-        but_Positive = (Button) findViewById(R.id.but_result_positive);
-        but_Reclerview = (Button) findViewById(R.id.but_Reclerview);
-        but_Positive = (Button) findViewById(R.id.but_result_positive);
-        rv_RecyclerView = (RecyclerView) findViewById(R.id.rv_RecyclerView);
+        but_Negative = findViewById(R.id.but_result_negative);
+        but_Positive = findViewById(R.id.but_result_positive);
+        but_Reclerview = findViewById(R.id.but_Reclerview);
+        but_Positive = findViewById(R.id.but_result_positive);
+        rv_RecyclerView = findViewById(R.id.rv_RecyclerView);
         but_Positive.setOnClickListener(this);
         but_Negative.setOnClickListener(this);
         but_Reclerview.setOnClickListener(this);

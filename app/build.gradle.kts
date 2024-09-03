@@ -137,6 +137,8 @@ dependencies {
     // implementation ("androidx.multidex:multidex:2.0.1")
     implementation("com.android.support:multidex:1.0.3")
     implementation("androidx.biometric:biometric:1.0.1")
+    implementation("com.google.zxing:core:3.4.1")
+    implementation("com.journeyapps:zxing-android-embedded:4.3.0")
 
 
 }
