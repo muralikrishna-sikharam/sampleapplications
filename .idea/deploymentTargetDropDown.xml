@@ -2,21 +2,6 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="Basic_Calculations">
-        <State />
-      </entry>
-      <entry key="Basic_Maths_Activity">
-        <State />
-      </entry>
-      <entry key="MainLoginFingerPrint">
-        <State />
-      </entry>
-      <entry key="PhonePeScanner">
-        <State />
-      </entry>
-      <entry key="SwiperActivity">
-        <State />
-      </entry>
       <entry key="app">
         <State />
       </entry>

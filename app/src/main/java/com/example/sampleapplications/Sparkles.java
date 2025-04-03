@@ -96,7 +96,6 @@ public class Sparkles extends AppCompatActivity implements View.OnClickListener 
 
     private void updateUserInterface() {
         if (servicesModelList.size() > 0) {
-
             updateXML();
             tv_text1.setText(servicesModelList.get(0).getService());
             tv_text2.setText(servicesModelList.get(1).getService());
@@ -129,11 +128,7 @@ public class Sparkles extends AppCompatActivity implements View.OnClickListener 
                     .placeholder(R.drawable.ic_launcher_background)
                     .error(R.drawable.ic_launcher_background)
                     .into(iv_Image6);
-
-
         }
-
-
     }
 
     private void getData() {

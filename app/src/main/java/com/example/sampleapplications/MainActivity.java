@@ -1,6 +1,9 @@
 package com.example.sampleapplications;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.os.BatteryManager;
 import android.os.Bundle;
 import android.view.View;
@@ -95,8 +98,14 @@ public class MainActivity extends AppCompatActivity {
         but_WhatsApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = getPackageManager().getLaunchIntentForPackage("com.whatsapp");
-                startActivity(intent1);
+                if (isWhatsAppInstalled(getApplicationContext())) {
+                    Intent intent1 = getPackageManager().getLaunchIntentForPackage("com.whatsapp");
+                    startActivity(intent1);
+                } else {
+                    Toast.makeText(MainActivity.this, " Whats App not installed. \n Please download it from play store.", Toast.LENGTH_SHORT).show();
+                }
+
+
             }
         });
         but_Call.setOnClickListener(new View.OnClickListener() {
@@ -201,6 +210,16 @@ public class MainActivity extends AppCompatActivity {
         super.onBackPressed();
        /* Intent intent = new Intent(MainActivity.this, SwiperActivity.class);
         startActivity(intent);*/
+    }
+
+    public boolean isWhatsAppInstalled(Context context) {
+        PackageManager packageManager = context.getPackageManager();
+        try {
+            PackageInfo packageInfo = packageManager.getPackageInfo("com.whatsapp", PackageManager.GET_ACTIVITIES);
+            return true;
+        } catch (PackageManager.NameNotFoundException e) {
+            return false;
+        }
     }
 
 }

@@ -140,5 +140,22 @@ dependencies {
     implementation("com.google.zxing:core:3.4.1")
     implementation("com.journeyapps:zxing-android-embedded:4.3.0")
 
+    // rx
+    implementation ("io.reactivex.rxjava2:rxjava:2.2.20")
+    implementation ("io.reactivex.rxjava2:rxandroid:2.1.1")
+    implementation ("io.reactivex.rxjava2:rxkotlin:2.4.0")
+
+//RxPermission
+   // implementation("io.github.mayampi01:com.tbruyelle.rxpermissions2:0.9.5@aar")
+   // implementation("com.github.tbruyelle.rxpermissions2:0.9.5@aar")
+   // implementation("com.github.tbruyelle:RxPermissions:0.9.5@aar")
+    //mplementation("com.github.tbruyelle:rxpermissions2:0.12@aar")
+
+
+// https://mvnrepository.com/artifact/com.github.tbruyelle/rxpermissions
+   // implementation("com.github.tbruyelle:rxpermissions:0.10.2")
+  //  implementation ("com.github.tbruyelle:0.10.2")
+   // implementation ("com.wavefront.wavefront-spring-boot:2.2.1")//com.wang.avi:library:2.3.3
+   // implementation("com.wang.avi:library:1.0.1")
 
 }
